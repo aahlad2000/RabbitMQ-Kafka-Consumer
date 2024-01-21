@@ -15,10 +15,10 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory
 @EnableKafka
 class KafkaConsumerConfig{
 
-    @Value("\${spring.kafka.consumer.bootstrap-servers}")
+    @Value("spring.kafka.bootstrap-servers")
     private val bootstrapServers : String = "localhost:9092"
 
-    @Value("\${spring.kafka.consumer.group-id }")
+    @Value("spring.kafka.consumer.group-id")
     private val groupId : String = ""
 
 
